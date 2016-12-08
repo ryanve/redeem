@@ -2,14 +2,14 @@
 `redeem` overloads your `require` function with a fallback to global lookup for use in mixed environments.
 
 ```
-npm install redeem --save 
+npm install redeem --save
 ```
 
 ## Example
 
 #### overload the existing `require` function
 ```js
-require('redeem')
+require('redeem')()
 ```
 
 #### imagine a global
