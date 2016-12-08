@@ -1,0 +1,30 @@
+{
+  "name": "redeem",
+  "version": "0.1.0",
+  "description": "require...overloaded to support global lookup",
+  "main": "redeem.js",
+  "scripts": {
+    "test": "node redeem.js"
+  },
+  "homepage": "https://github.com/ryanve/redeem",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanve/redeem.git"
+  },
+  "keywords": [
+    "require",
+    "overloader",
+    "overload",
+    "common",
+    "commonjs",
+    "browser",
+    "global",
+    "fallback",
+    "javascript"
+  ],
+  "author": "Ryan Van Etten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryanve/redeem/issues"
+  }
+}
