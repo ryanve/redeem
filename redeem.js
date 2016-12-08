@@ -1,7 +1,14 @@
 !function(root) {
+  var old
+
+  function redeem() {
+    old = root.require
+    root.require = require
+  }
+
   function require(id) {
     var found
-    
+
     try {
       found = old.apply(this, arguments)
     } catch (error) {
@@ -11,11 +18,8 @@
 
     return found
   }
-  
-  var old = root.require
-  root.require = require
-  
-  if (typeof module != 'undefined') { 
-    module.exports = require
-  }
+
+  redeem.require = require
+  typeof module != 'undefined' ? module.exports = redeem : root.redeem = redeem
+  redeem()
 }(this);
